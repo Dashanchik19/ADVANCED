@@ -137,7 +137,8 @@ ul {
 }
 
 .main {
-  background-image: url("/Example-main/assets/img/main-picture.png");
+  background-color: #222;
+  background-image: url("/assets/img/main-picture.png");
   min-height: 100vh;
   background-size: cover;
   background-position: center;
