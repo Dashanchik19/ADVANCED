@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-wrapper">
+                        <div class="header__logo">
+                            <img src="./assets/img/logo.png" alt="Logo" class="logo">
+                        </div>
+
+                        <div class="header__info">
+                            <div class="header__info-destination">
+                                <i class="ri-map-pin-line"></i>
+                                <p>Slokas 52, Riga</p>
+                            </div>
+
+                            <ul class="header__social social">
+                                <li class="social__item">
+                                    <img src="./assets/img/fb.png" alt="Logo" class="facebook">
+                                </li>
+                                <li class="social__item">
+                                    <img src="./assets/img/instagram.png" alt="Logo" class="instagram">
+                                </li>
+                                <li class="social__item">
+                                    <img src="./assets/img/tik-tok.png" alt="Logo" class="tik-tok">
+                                </li>
+                                <li class="social__item">
+                                    <img src="./assets/img/youtube.png" alt="Logo" class="youtube">
+                                </li>
+                            </ul>
+
+                            <div class="header__number">
+                                <a href="#!">+371 26858674</a>
+                                <span>Обслуживание клиентов</span>
+                            </div>
+
+                            <div class="header__lang">
+                                <i class="ri-global-line"></i>
+                                <div class="header__lang-choise">
+                                    <div class="lang active">RU</div>
+                                    <div class="lang">LV</div>
+                                    <div class="lang">EN</div>
+                                </div>
+
+                                <i class="ri-arrow-down-line"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="header__burger-menu">
+                            <i class="ri-menu-3-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <menu class="menu">
+            <div class="menu__wrapper">
+                <div class="menu__below">
+                    <div class="container">
+                        <div class="header__below-wrapper">
+                            <nav class="menu__wrapper">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Главная</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Продажа авто</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Покупка авто</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Реализация</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Почему мы</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">О нас</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="menu__button">
+                                <button>Заказать звонок</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </menu>
+    </header>
+
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="container">
+                <div class="main__content">
+                    <h1 class="main__title">
+                        Продажа проверенных б/y автомобилей<br> из европы
+                    </h1>
+
+                    <p class="main__descript">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        Praesentium vero alias eius sunt .
+                    </p>
+
+                    <div class="main__button">
+                        <button>Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let langs = document.querySelectorAll(".lang");
+
+        langs.forEach(lang => {
+            lang.addEventListener("click", () => {
+                langs.forEach(item => item.classList.remove("active"));
+
+                lang.classList.add("active");
+            });
+        });
+
+    </script>
+</body>
+
+</html>
